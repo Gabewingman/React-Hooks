@@ -10,6 +10,7 @@ button {
   background: #03346E;
   color: #E2E2B6;
   padding: 5px;
+  font-weight: bolder;
 }
 
 .HooksUseState {
@@ -25,11 +26,37 @@ button {
   padding-top: 20px;
 }
 
+.syntaxUseState {
+  border: 1px solid white;
+  border-radius: 8px;
+  margin-right: 300px;
+  background: #03346E;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: darkgreen;
+  margin-bottom: 20px;
+}
+
+.syntaxUseState p {
+  font-weight: bolder;
+  padding-left: 8px;
+}
+
+.desSyntax {
+  background: #03346E;
+  color: #E2E2B6;
+}
+
 .sampleUseState {
   border: 1px solid white;
+  border-radius: 8px;
   background:#03346E;
   margin-right: 300px;
   text-align: center;
+}
+
+.SampleOutput {
+  color: #E2E2B6;
 }
 
 .BoxUseState {
