@@ -1,0 +1,28 @@
+
+* {
+  background: #021526;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+  background: #03346E;
+  color: #E2E2B6;
+  padding: 5px;
+}
+
+p {
+  border: 1px solid white;
+  background: whitesmoke;
+  padding: 20vh;
+  text-align: center;
+}
+
+div {
+  color: #E2E2B6;
+  padding-bottom: 30px;
+}
+
+div button:hover {
+  background: #021526;
+}
