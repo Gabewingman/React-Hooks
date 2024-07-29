@@ -1,8 +1,8 @@
 
 * {
   background: #021526;
-  text-align: center;
   font-family: 'Courier New', Courier, monospace;
+  line-height: 28px;
 }
 
 button {
@@ -11,16 +11,41 @@ button {
   padding: 5px;
 }
 
-p {
+.HooksUseState {
+  margin-left: 190px;
+}
+
+.descriptionUseState {
+  padding-top: 20px;
+  margin-right: 200px;
+}
+
+.UseStateIntro {
+  padding-top: 20px;
+}
+
+.sampleUseState {
+  border: 1px solid white;
+  background:#03346E;
+  margin-right: 300px;
+  text-align: center;
+}
+
+.BoxUseState {
   border: 1px solid white;
   background: whitesmoke;
-  padding: 20vh;
-  text-align: center;
+  padding: 5vh;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+h3 {
+  background: #03346E;
 }
 
 div {
   color: #E2E2B6;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 div button:hover {
