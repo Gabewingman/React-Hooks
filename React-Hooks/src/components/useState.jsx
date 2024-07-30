@@ -7,7 +7,6 @@ function UseState() {
   // syntax: const [state, setState] = useState(initialState);
   const [color, setColor] = useState();
   const [backgroundColor, setBackgroundColor] = useState();
-  //   const [count, setCount] = useState(0);
 
   return (
     <>
@@ -36,12 +35,6 @@ function UseState() {
           >
             Hello. My favorite color is {color}.
           </p>
-          {/* I quote this program for future reference. Maybe this can help you too. */}
-          {/* <div>
-         <button onClick={() => setCount(count - 1)}>-</button>
-         <span> {count} </span>
-         <button onClick={() => setCount(count + 1)}>+</button>
-       </div> */}
 
           <h3>Font Color</h3>
           <button type="button" onClick={() => setColor("White")}>
