@@ -17,7 +17,7 @@ button {
   margin-left: 190px;
 }
 
-.descriptionUseState {
+.descriptionUseState, .descriptionUseEffect {
   padding-top: 20px;
   margin-right: 200px;
 }
