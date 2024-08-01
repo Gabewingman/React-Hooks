@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import 'App.css';
 // syntax: useEffect(function, dependencies);
 
 // 1. useEffect(() => {}) - Runs after re-render
