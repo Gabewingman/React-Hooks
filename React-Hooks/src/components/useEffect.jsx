@@ -1,37 +1,40 @@
-import { useState, useEffect } from "react";
-import 'App.css';
+
+// useEffect
+
+// Purpose: Allows you to perform side effects in functional components. It can be used for tasks such as data fetching, subscriptions, or manually changing the DOM.
+
+// Syntax:
+// useEffect(() => {
+//   // Effect code here
+//   return () => {
+//     // Cleanup code here
+//   };
+// }, [dependencies]);
+
 // syntax: useEffect(function, dependencies);
 
 // 1. useEffect(() => {}) - Runs after re-render
 // 2. useEffect(() => {}, []) - Runs only on mount
 // 3. useEffect(() => {}, [condition]) - Runs conditionally
 
-export default function useEffect() {
-  const [color, setColor] = useState();
+import React, { useState, useEffect } from 'react';
 
-  useEffect(() => {
-    document.title = `You have clicked ${color} times`;
-  });
+function useEffect() {
+const [count, setCount] = useState(0);
 
-  return (
-    <>
-      <div className="useEffectDiv">
-        <h1 className="titleUseEffect">React useEffect()</h1>
-        <p className="descriptionUseEffect">
-          The useEffect hook in React is used to perform side effects in
-          function components. Side effects can include things like fetching
-          data, directly updating the DOM, and timers. useEffect is called after
-          the component is rendered to the screen, and it can be set to run
-          under different conditions.
-        </p>
-        <button type="button" onClick={() => setColor(color + 1)}>
-          Add
-        </button>
-        <span>{color}</span>
-        <button type="button" onClick={() => setColor(color - 1)}>
-          Remove"
-        </button>
-      </div>
-    </>
-  );
+useEffect(() => {
+document.title = `You clicked ${count} times`;
+}, [count]);
+
+return (
+
+<div>
+<p>You clicked {count} times</p>
+<button onClick={() => setCount(count + 1)}>
+Click me
+</button>
+</div>
+);
 }
+
+export default useEffect

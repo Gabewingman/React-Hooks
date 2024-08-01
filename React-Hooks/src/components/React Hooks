@@ -1,0 +1,67 @@
+React Hooks
+
+React Hooks are functions that allow you to use state and other React features in functional components. Introduced in React 16.8, Hooks enable you to use state, lifecycle methods, context, and other React features without writing class components. Here are some key React Hooks and their uses:
+
+Basic Hooks:
+
+1. useState
+
+Purpose: Allows you to add state to functional components.
+
+// Syntax:
+// const [state, setState] = useState(initialState);
+
+2. useEffect
+
+Purpose: Allows you to perform side effects in functional components. It can be used for tasks such as data fetching, subscriptions, or manually changing the DOM.
+
+// Syntax:
+// useEffect(() => {
+// // Effect code here
+// return () => {
+// // Cleanup code here
+// };
+// }, [dependencies]);
+
+Additional Hooks:
+
+1. useContext
+
+Purpose: Allows you to subscribe to React context without introducing nesting.
+
+// Syntax:
+// const value = useContext(MyContext);
+
+2. useReducer
+
+Purpose: A more powerful alternative to useState for managing complex state logic. It's similar to Redux but simpler.
+
+// Syntax:
+// const [state, dispatch] = useReducer(reducer, initialState);
+
+3. useRef
+
+Purpose: Allows you to create a reference to a DOM element or a value that persists across renders without causing a re-render when updated.
+
+// Syntax:
+// const refContainer = useRef(initialValue);
+
+4. useMemo
+
+Purpose: Memoizes a computed value to optimize performance. It only recalculates the value when one of the dependencies changes.
+
+// Syntax:
+// const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
+
+5. useCallback
+
+Purpose: Memoizes a callback function to optimize performance, particularly useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecessary renders.
+
+// Syntax:
+// const memoizedCallback = useCallback(() => {
+doSomething(a, b);
+}, [a, b]);
+
+Summary
+
+React Hooks simplify the process of managing state and side effects in functional components, allowing you to use many features of class components without writing a single class. This leads to cleaner, more concise, and more maintainable code.
